@@ -1,0 +1,17 @@
+<launch>
+
+    <env name="GAZEBO_RESOURCE_PATH" value="$(find living_lab_robot_gazebo)"/>
+
+    <include file="$(find living_lab_robot_description)/launch/bringup.launch"/>
+    <include file="$(find gazebo_ros)/launch/empty_world.launch">
+<!--        <arg name="world_name" value="worlds/living_lab_demo.world"/>	-->
+<!--        <arg name="world_name" value="worlds/living_lab.world"/>	-->
+<!--        <arg name="world_name" value="worlds/living_lab_shelf.world"/>	-->
+        <arg name="world_name" value="worlds/living_lab_box_75.world"/>
+        <arg name="use_sim_time" value="true" />
+        <arg name="verbose" value="true"/>
+    </include>
+
+    <node name="urdf_spawner" pkg="gazebo_ros" type="spawn_model" respawn="false" output="screen"
+            args="-urdf -model living_lab_robot -param robot_description"/>
+</launch>

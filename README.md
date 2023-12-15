@@ -1,1 +1,27 @@
-# zipsa_simulation
+# living_lab_robot_v2
+
+ZipSa (Living Lab Robot Version2) meta-package. See the documents in [doc](./doc) directory for detailed information.
+
+
+## Operation
+
+1. [Introduction](./doc/introduction.md)
+2. [Installation](./doc/installation.md)
+3. [Bringup the ZipSa](./doc/bringup.md)
+4. [Execute the Demo](./doc/execute_demo.md)
+5. [Troubleshootings](./doc/troubleshooting.md)
+
+
+## Maintainance
+
+1. [Teardown the robot cases](./doc/teardown_cases.md)
+2. [Charging](./doc/charging.md)
+
+
+## Datasheet
+
+1. [Electronic connection](./connection_electronic.md)
+
+
+## 시뮬레이션 실행 커맨드
+```roslaunch living_lab_robot_bringup bringup_gazebo.launch```

@@ -1,0 +1,14 @@
+<launch>
+    <rosparam file="$(find living_lab_robot_control)/config/controllers_gazebo.yaml" command="load"/>
+
+    <node name="controller_spawner" pkg="controller_manager" type="spawner" respawn="true"
+                output="screen"   args="joint_state_controller
+                                        arm_controller
+                                        arm_base_controller
+                                        gripper_controller
+                                        screen_tilt_controller
+                                        pan_controller
+                                        tilt_controller
+                                        "/>
+
+</launch>

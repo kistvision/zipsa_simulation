@@ -1,0 +1,19 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>living_lab_robot_gazebo</name>
+  <version>0.0.0</version>
+  <description>The living_lab_robot_gazebo package</description>
+
+  <author email="byeongkyu@gmail.com">Byeong-Kyu Ahn</author>
+  <maintainer email="byeongkyu@gmail.com">Byeong-Kyu Ahn</maintainer>
+  <license>BSD</license>
+
+  <url type="repository">https://github.com/byeongkyu/living_lab_robot_v2</url>
+
+  <buildtool_depend>catkin</buildtool_depend>
+  <depend>gazebo_ros</depend>
+  <depend>living_lab_robot_description</depend>
+
+  <export>
+  </export>
+</package>

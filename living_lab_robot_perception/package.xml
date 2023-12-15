@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<package format="2">
+  <name>living_lab_robot_perception</name>
+  <version>0.0.0</version>
+  <description>The living_lab_robot_perception package</description>
+
+  <author email="byeongkyu@gmail.com">Byeong-Kyu Ahn</author>
+  <maintainer email="byeongkyu@gmail.com">Byeong-Kyu Ahn</maintainer>
+  <license>BSD</license>
+
+  <url type="repository">https://github.com/byeongkyu/living_lab_robot_v2</url>
+
+  <build_depend>message_generation</build_depend>
+  <exec_depend>message_runtime</exec_depend>
+  <buildtool_depend>catkin</buildtool_depend>
+  <build_depend>rospy</build_depend>
+  <build_export_depend>rospy</build_export_depend>
+  <exec_depend>rospy</exec_depend>
+  <depend>qrcode_detector_ros</depend>
+
+  <export>
+  </export>
+</package>
